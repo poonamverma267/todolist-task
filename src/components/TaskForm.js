@@ -7,7 +7,7 @@ const TaskForm = (props) => {
     event.preventDefault();
     const todoTask = {
       task: todoTaskRef.current.value,
-      id: Math.floor(Math.random() * 100).toString(),
+      id: "t" + Math.floor(Math.random() * 100).toString(),
     };
 
     props.onAddTask(todoTask);

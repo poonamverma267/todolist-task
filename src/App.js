@@ -14,11 +14,8 @@ const App = (task) => {
 
   const deleteTaskHandler = (taskId) => {
     setList((prevList) => {
-      console.log(taskId);
-      console.log(prevList);
       prevList = prevList.filter((item) => item.id !== taskId);
-      console.log(prevList);
-      return [prevList];
+      return prevList;
     });
   };
   return (
