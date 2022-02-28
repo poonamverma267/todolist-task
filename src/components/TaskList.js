@@ -12,14 +12,13 @@ const TaskList = (props) => {
 
   const changeItemHandler = (id) => {};
   return (
-    <div className="card">
+    <div className="card mt-5">
       <ul className="list-group list-group-flush">
         {props.items.map((toDoItem) => (
           <TaskListItem
             key={toDoItem.id}
             task={toDoItem.task}
             onDeleteItemTask={deleteItemHandler.bind(null, toDoItem.id)}
-            onCompleteItem={changeItemHandler.bind(null, toDoItem.id)}
           />
         ))}
       </ul>

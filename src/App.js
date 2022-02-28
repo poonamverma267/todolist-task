@@ -24,7 +24,7 @@ const App = (task) => {
   return (
     <>
       <div className="container">
-        <div className="card">
+        <div className="card mt-5">
           <p className="card-header bg-dark text-white display-6">Todo List</p>
           <div className="card-body">
             <TaskForm onAddTask={addTaskHandler}></TaskForm>
