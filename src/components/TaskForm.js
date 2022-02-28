@@ -14,8 +14,8 @@ const TaskForm = (props) => {
     todoTaskRef.current.value = "";
   };
   return (
-    <div className="row">
-      <div className="col-6">
+    <div className="row mb-3">
+      <div className="col-9">
         <h2>ToDo List</h2>
         <form className="px-3" onSubmit={SubmitFormHandler}>
           <input
@@ -23,7 +23,7 @@ const TaskForm = (props) => {
             maxLength="50"
             placeholder="New Task"
             ref={todoTaskRef}
-            className="me-2 ms-4 fs-3"
+            className="me-2 ms-4 fs-3 col-lg-9"
           />
           <button type="submit" className="btn-primary fs-3">
             Add
