@@ -23,6 +23,7 @@ const TaskForm = (props) => {
             maxLength="50"
             placeholder="New Task"
             ref={todoTaskRef}
+            className="me-2 ms-4"
           />
           <button type="submit" className="btn-primary">
             Add
